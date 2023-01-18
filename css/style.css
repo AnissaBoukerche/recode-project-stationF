@@ -1,0 +1,231 @@
+/*Reset: effacer/réécrire les styles par défaut de CSS */
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+ul, ol {
+    list-style: none;
+}
+
+* {
+    margin : 0;
+    padding : 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+/*Style général */
+
+* {
+    font-family: 'Cabin', sans-serif;
+}
+
+.flux {
+    margin-left: 75px;
+    margin-right: 75px;
+}
+
+.title-2{
+    font-size: 40px;
+    margin-bottom: 20px;
+    line-height: 1.25;
+}
+
+.button {
+    text-transform: uppercase;
+    color: white;
+    border-radius: 20px;
+    padding: 10px 20px;
+    display: inline-block;
+}
+
+.button-orange {
+    background: linear-gradient(90deg, #ff3592, #ffb800 50% 100%); 
+    background-size: 200% 100%;
+    background-position: right;
+    transition: all 0.2s;
+}
+
+.button-orange:hover {
+    background: linear-gradient(90deg, #ff3592, #ffb800); 
+    background-position: left;
+}
+
+.button-black {
+    background-color: #202020;
+    transition: all 0.2s;
+}
+
+.button-black:hover{
+    background-color: grey;
+}
+.text-paragraphe {
+    line-height: 1.5;
+}
+@media (max-width: 500px) {
+    .flux {
+        margin-left: 15px;
+        margin-right: 15px;
+    }
+    }
+
+/*Start : stylisation du header */
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.list-links {
+    display: flex;
+    column-gap: 40px;
+    align-items: center;
+}
+
+.logo {
+    width: 125px;
+    height: 25px;
+}
+
+.nav-link {
+    text-transform: uppercase;
+    font-size: 14px;
+}
+
+.nav-link:last-child {
+    background-color: black;
+    color: white;
+    padding: 15px 30px;
+    border-radius: 30px;
+    font-weight: 500;
+}
+
+/*Start : Stylisation de la cover */
+
+.cover {
+    display: flex;
+    align-items: center;
+}
+
+@media (max-width: 500px) {
+.cover {
+    flex-direction:culumn;
+}
+}
+
+
+.image-office {
+    width: 55%;
+    flex-shrink: 0;
+    height: 250px;
+    object-fit: cover;
+    object-position: bottom;
+}
+
+.icon-scroll {
+    background-color: black;
+    width: 50px;
+    height: 50px;
+    border-radius: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.cover-title{
+font-size: 50px;
+margin: bottom 20px; ;
+}
+
+.cover-introduction {
+margin-bottom: 30px;
+
+}
+
+.cover-text {
+padding-right: 100px;
+}
+
+/* START : Stylisation des programs */
+
+.programs {
+    background-color: #202020;
+    margin-top: 75px;
+    padding-top: 75px;
+    padding-bottom: 75px;
+}
+
+.programs .flux {
+    display: flex;
+    gap: 50px
+}
+
+.programs .container-texts {
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.programs .title-2 {
+    width: 75%;
+}
+
+.programs .container-texts .button {
+    margin-top: 50px;
+}
+
+.programs .container-texts p {
+    flex-grow: 1;
+}
+
+.programs .container-images {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 25px;
+}
+
+.programs .container-images li {
+    background-color: white;
+    border-radius: 10px;
+    width: calc(50% - 25px / 2);
+    height: 130px;
+    padding: 30px;
+    box-sizing: border-box;
+}
+
+.programs .container-images li img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+/* START : Stylisation du online */
+
+.online {
+    background: linear-gradient(180deg, #202020 0% 50%, white 50% 100%);
+}
+.online .online-content {
+    display: flex;
+    padding: 75px 50px 50px;
+    background: linear-gradient(90deg, #ff3592, #ffb800);
+}
+
+.online img {
+    width: 50%;
+    padding-right: 50px;
+}
+
+.online .container-texts {
+    width: 50%;
+    color: white;
+}
+
+.online .container-texts a {
+    margin-top: 50px;
+    }
